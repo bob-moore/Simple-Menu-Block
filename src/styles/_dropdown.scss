@@ -1,0 +1,11 @@
+.wp-block-rcm-simple-menu[data-layout="dropdown"] {
+    
+    ul.sub-menu {		
+        padding-left: 1rem;
+
+        .menu-item-text {
+            font-size: var(  --smb-submenu-font-size, .95em );
+            padding: var( --smb-submenu-padding, 0 0 0 1em );
+        }
+    }
+}

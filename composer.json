@@ -51,6 +51,22 @@
             "npm install",
             "npm run build",
             "rm -rf node_modules"
+        ],
+        "package": [
+            "rm -rf src",
+            "rm -rf node_modules",
+            "rm -f composer.json",
+            "rm -f project.code-workspace",
+            "rm -f package-lock.json",
+            "rm -f package.json",
+            "rm -f webpack.config.js",
+            "rm -f declerations.d.ts",
+            "rm -f tsconfig.json",
+            "rm -f postcss.config.js",
+            "rm -f stylelint.config.js",
+            "rm -f composer.lock",
+            "git add --all",
+            "git add --force vendor"
         ]
     }
 }

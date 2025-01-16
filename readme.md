@@ -15,7 +15,7 @@
 
 ## Installation
 
-1. Clone or download this repository.  
+1. Download the latest [release](https://github.com/bob-moore/Simple-Menu-Block/releases) from the releases page. 
 2. Upload the `simple-menu-block` folder to your WordPress installation's `/wp-content/plugins/` directory.  
 3. Activate the plugin through the WordPress admin under **Plugins**.  
 4. Add the "Simple Menu" block in the block editor and configure it using the block settings.

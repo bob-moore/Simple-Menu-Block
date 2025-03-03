@@ -26,19 +26,25 @@ const { state, actions } = store(metadata.name, {
 		},
 
 		/**
-		 * Handles click events by toggling the submenu active state.
+		 * Handles Touch events by toggling the submenu active state.
 		 */
-		handleClick: () => {
-			actions.toggle();
+		handleTouch: ( event : TouchEvent ) => {
+			const context = getContext<Context>();
+			if ( ! context.isSubmenuActive ) {
+				event.preventDefault();
+				actions.toggle();
+			}
 		},
 
 		/**
 		 * Handles focus events by setting the submenu active state to true.
 		 */
-		handleFocus: () => {
+		handleFocus: ( event ) => {
 			const context = getContext<Context>();
 			const {ref} = getElement();
 			const parent = ref.closest('[data-wp-context]');
+
+			console.log( event );
 
 			if ( parent && ! state.focusedMenuItems.has( parent ) ) {
 				state.focusedMenuItems.set( parent, {
@@ -52,14 +58,15 @@ const { state, actions } = store(metadata.name, {
 		/**
 		 * Handles hover events by toggling the submenu active state.
 		 */
-		handleHover: () => {
-			actions.toggle();
+		handleHover: ( event ) => {
+			// actions.toggle();
 		},
 
 		/**
 		 * Handles blur events.
 		 */
-		handleBlur: () => {
+		handleBlur: ( event ) => {
+			console.log('blue', event.type);
 			const context = getContext<Context>();
 			setTimeout(() => {
 				state.focusedMenuItems.forEach( ( item: FocusedMenuItem ) => {

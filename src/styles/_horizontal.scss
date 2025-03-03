@@ -44,14 +44,14 @@
             padding: 0;
         }
         
-        li:hover,
-        li:focus,
-        li[aria-expanded="true"]{
-            > .sub-menu {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
+        // li:hover,
+        // li:focus,
+        // li[aria-expanded="true"]{
+        //     > .sub-menu {
+        //         opacity: 1;
+        //         visibility: visible;
+        //     }
+        // }
         
         .sub-menu[aria-expanded="true"] {
             opacity: 1;

@@ -136,6 +136,8 @@ function add_link_interactivity_attributes( string $html, \stdClass $menu_args )
 		while ( $processor->next_tag( [ 'tag_name' => 'a' ] ) ) {
 			if ( $edit_mode ) {
 				$processor->set_attribute( 'onclick', 'return false;' );
+			} else {
+				$processor->set_attribute( 'data-wp-on--touchstart', 'actions.handleTouch' );
 			}
 
 			if ( 'horizontal' === $layout ) {

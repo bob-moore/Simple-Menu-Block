@@ -15,7 +15,12 @@
 		"start": "wp-scripts start --experimental-modules"
 	},
 	"files": [
-		"[^.]*"
+		"simple-menu-block.php",
+		"build",
+		"assets",
+		"inc",
+		"vendor",
+		"readme.md"
 	],
 	"dependencies": {
 		"@wordpress/block-editor": "^14.10.1",

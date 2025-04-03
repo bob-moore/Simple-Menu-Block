@@ -1,0 +1,9 @@
+=== Parsed Header Metadata ===
+0:       https://www.gnu.org/licenses/gpl-2.0.html
+
+=== Parsed Sections ===
+[0]
+
+If used in a block theme, classic menus are not enabled by default. This plugin does not enable them for you, you will need to enable them in your theme.
+
+

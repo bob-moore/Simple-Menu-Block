@@ -41,6 +41,7 @@
         "phpsniff:PSR2": "./vendor/bin/phpcs ./inc -v --standard='PSR2'",
         "phpsniff:WP": "./vendor/bin/phpcs ./inc -v --standard='WordPress'",
         "phpunit": "./vendor/bin/phpunit --configuration ./tests/phpunit.xml",
+        "manifest": "manifest.sh",
         "build": [
             "composer install",
             "@phpstan",

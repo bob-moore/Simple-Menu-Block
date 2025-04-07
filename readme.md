@@ -25,7 +25,7 @@
 This plugin is licensed under the GPL-2.0-or-later.  
 See [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html) for details.
 
-## FAQ
+# FAQ
 
 ### What is a "classic menu"?  
 Classic menus are menus created using the WordPress "Appearance > Menus" interface.
@@ -36,8 +36,8 @@ Yes, select any menu you’ve created under "Appearance > Menus" and apply your 
 ### Does this plugin support responsive layouts?  
 Yes, the dropdown/accordion layout is ideal for responsive designs.
 
-## Changelog
+# Changelog
 
-### 0.1.0
+## 0.1.0
 - Initial release.  
 

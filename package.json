@@ -1,5 +1,5 @@
 {
-	"name": "iblock",
+	"name": "simple-menu-block",
 	"version": "0.1.0",
 	"description": "interactive block",
 	"author": "The WordPress Contributors",
@@ -14,8 +14,13 @@
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start --experimental-modules"
 	},
-	"files": [
-		"[^.]*"
+	"files": [ 
+		"simple-menu-block.php",
+		"build",
+		"assets",
+		"inc",
+		"vendor",
+		"readme.md"
 	],
 	"dependencies": {
 		"@wordpress/block-editor": "^14.10.1",

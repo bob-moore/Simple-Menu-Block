@@ -10,10 +10,10 @@
         gap: var( --smb-menu-gap, 8px );
     }
 
-    a, a:link {
+    a, a:link, .nav-item-link {
         display: block;
         text-decoration: var( --smb-link-text-decoration, none );
-        width: 100%;
+        // width: 100%;
         line-height: var( --smb-link-text-decoration, 1 );
         padding: var( --smb-link-padding, 1em );
     }
@@ -84,7 +84,7 @@
             left: 100%;
         }
         
-        a, a:link {
+        a, a:link, .nav-item-link {
             padding: 1em 1.5em;
             color: var( --smb-sub-menu-link-color, currentColor );
             text-transform: none;

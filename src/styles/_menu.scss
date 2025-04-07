@@ -18,10 +18,13 @@
 
 		.menu-item-text {
 			flex: 1;
-
-			a, a:link {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			a, a:link, .nav-item-link {
 				display: inline-block;
-				width: 100%;
+				flex: 1;
+				// width: 100%;
 			}
 		}
 	}

@@ -2,3 +2,13 @@
 @use 'horizontal';
 @use 'vertical';
 @use 'dropdown';
+
+button.nav-item-link {
+    all: unset; /* Removes default button styles */
+    color: inherit; /* Default link color */
+    // cursor: default;
+    text-decoration: underline;
+    // click-events: none;
+    font-size: inherit;
+    font-family: inherit;
+}

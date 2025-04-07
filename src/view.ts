@@ -18,11 +18,17 @@ const { state, actions } = store(metadata.name, {
 	},
 	actions: {
 		/**
+		 * Handle button click events.
+		 */
+		handleClick: ( event ) => {
+			actions.toggle();
+		},
+		/**
 		 * Toggles the submenu active state.
 		 */
 		toggle: () => {
 			const context = getContext<Context>();
-			context.isSubmenuActive = !context.isSubmenuActive;
+			context.isSubmenuActive = ! context.isSubmenuActive;
 		},
 
 		/**
@@ -44,8 +50,6 @@ const { state, actions } = store(metadata.name, {
 			const {ref} = getElement();
 			const parent = ref.closest('[data-wp-context]');
 
-			console.log( event );
-
 			if ( parent && ! state.focusedMenuItems.has( parent ) ) {
 				state.focusedMenuItems.set( parent, {
 					ref: parent,
@@ -66,7 +70,6 @@ const { state, actions } = store(metadata.name, {
 		 * Handles blur events.
 		 */
 		handleBlur: ( event ) => {
-			console.log('blue', event.type);
 			const context = getContext<Context>();
 			setTimeout(() => {
 				state.focusedMenuItems.forEach( ( item: FocusedMenuItem ) => {
@@ -75,7 +78,7 @@ const { state, actions } = store(metadata.name, {
 						state.focusedMenuItems.delete( item.ref );
 					}
 				} );
-			}, 0);
+			}, 10);
 		},
 	},
 });

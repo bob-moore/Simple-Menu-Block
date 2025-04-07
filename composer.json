@@ -14,7 +14,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "wpify/scoper": true
         }
     },
     "autoload": {
@@ -30,8 +31,9 @@
         "phpstan/phpstan": "^1.10",
         "szepeviktor/phpstan-wordpress": "^1.3",
         "phpcsstandards/phpcsutils": "^1.0",
-        "10up/wp_mock": "*"
-        },
+        "10up/wp_mock": "*",
+        "wpify/scoper": "^3.2"
+    },
     "scripts": {
         "phpstan": "./vendor/bin/phpstan analyze -c ./tests/phpstan.neon --memory-limit=2048M",
         "phpsniff": "./vendor/bin/phpcs ./inc -v --standard='./tests/phpcs.xml'",
@@ -41,6 +43,7 @@
         "phpsniff:PSR2": "./vendor/bin/phpcs ./inc -v --standard='PSR2'",
         "phpsniff:WP": "./vendor/bin/phpcs ./inc -v --standard='WordPress'",
         "phpunit": "./vendor/bin/phpunit --configuration ./tests/phpunit.xml",
+        "manifest": "manifest.sh",
         "build": [
             "composer install",
             "@phpstan",
@@ -68,5 +71,19 @@
             "git add --all",
             "git add --force vendor"
         ]
+    },
+    "extra": {
+        "wpify-scoper": {
+            "prefix": "Rcm\\SimpleMenuBlock\\Deps",
+            "slug": "rcm_simple_menu_block",
+            "folder": "vendor/scoped",
+            "globals": [
+                "wordpress",
+                "woocommerce"
+            ],
+            "composerjson": "composer-deps.json",
+            "composerlock": "composer-deps.lock",
+            "autorun": true
+        }
     }
 }

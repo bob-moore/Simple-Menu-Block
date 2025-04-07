@@ -20,6 +20,11 @@
 3. Activate the plugin through the WordPress admin under **Plugins**.  
 4. Add the "Simple Menu" block in the block editor and configure it using the block settings.
 
+## License
+
+This plugin is licensed under the GPL-2.0-or-later.  
+See [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html) for details.
+
 ## FAQ
 
 ### What is a "classic menu"?  
@@ -36,7 +41,3 @@ Yes, the dropdown/accordion layout is ideal for responsive designs.
 ### 0.1.0
 - Initial release.  
 
-## License
-
-This plugin is licensed under the GPL-2.0-or-later.  
-See [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html) for details.

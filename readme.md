@@ -1,4 +1,4 @@
-# Simple Menu Block
+# Description
 
 **Simple Menu Block** is a WordPress plugin that allows you to use classic WordPress menus as a block in the block editor. Choose from three layouts: horizontal, vertical, or dropdown/accordion.
 
@@ -27,13 +27,13 @@ See [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html) for details.
 
 # FAQ
 
-### What is a "classic menu"?  
+## What is a "classic menu"?  
 Classic menus are menus created using the WordPress "Appearance > Menus" interface.
 
-### Can I use this plugin with existing menus?  
+## Can I use this plugin with existing menus?  
 Yes, select any menu you’ve created under "Appearance > Menus" and apply your desired layout in the block settings.
 
-### Does this plugin support responsive layouts?  
+## Does this plugin support responsive layouts?  
 Yes, the dropdown/accordion layout is ideal for responsive designs.
 
 # Changelog
